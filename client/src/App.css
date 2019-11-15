@@ -1,0 +1,167 @@
+@import url(~bootstrap/dist/css/bootstrap.css);
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App .content {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.App .content .sidebar .close {
+  height: 30px;
+  width: 100%;
+}
+
+.App .content .mainbar.loading-open {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .content .sidebar .feedurl li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+.App .content .sidebar .feedurl li:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 769px) {
+  .App .content .sidebar {
+    position: fixed;
+    width: 260px;
+    visibility: visible;
+  }
+  
+  .App .content .mainbar {
+    position: absolute;
+    left: 260px;
+    width: calc(100% - 260px);
+    height: 100%;
+  }
+  
+  .App .content .mainbar .contentbar {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .App .content .sidebar .logo {
+    padding: 20px;
+    border-bottom: 1px solid #499629;
+    border-right: 1px solid #499629;
+    visibility: visible;
+  }
+  
+  .App .content .sidebar .feedurl {
+    padding-top: 10px;
+    border-right: 1px solid #499629;
+  }
+  
+  .App .content .sidebar .close {
+    visibility: hidden;
+  }
+
+  .App .content .mainbar .topbar {
+    visibility: hidden;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+ .App .content .mainbar {
+    height: 100%;
+    width: 100%;
+  }
+
+  .App .content .mainbar .contentbar{
+    height: 100%;
+    width: 100%;
+  }
+
+  .App .content .sidebar {
+    position: fixed;
+    right: -50%;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+  }
+
+  .App .content .sidebar .feedurl {
+    padding-top: 10px;
+    border-left: 1px solid #979797;
+  }
+
+  .App .content .rightBarOpen {
+    visibility: visible;
+    right: 0;
+  }
+
+  .App .content .mainbar .contentBarOpen {
+    visibility: hidden;
+  }
+
+  .App .content .mainbar .topbar {
+    position: fixed;
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px
+  }
+
+  .App .content .sidebar .close {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    height: 30px;
+    width: 100%;
+    border-left: 2px solid #979797;
+  }
+  
+  .App .content .sidebar .feedurl {
+    margin-top: 30px;
+  }
+
+  .feed-area {
+    padding-top: 50px
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
