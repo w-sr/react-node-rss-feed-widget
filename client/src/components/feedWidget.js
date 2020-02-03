@@ -22,6 +22,7 @@ class FeedWidget extends Component {
   }
 
   compare(a, b) {
+    console.log('git - test');
     const dataA = a.date;
     const dateB = b.date;
 
@@ -39,6 +40,7 @@ class FeedWidget extends Component {
   }
 
   trackScrolling() {
+    console.log('git - test');
     const wrappedElement = document.getElementById('feed-area-image');
     if (this.isBottom(wrappedElement)) {
       const currentPaged = this.state.paged + 1;
@@ -94,6 +96,7 @@ class FeedWidget extends Component {
   };
 
   componentDidMount() {
+    console.log('git - test');
     const { feedurl, main } = this.props;
     this.setState({
       route: main,
