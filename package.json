@@ -18,7 +18,7 @@
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.2",
     "express": "^4.17.1",
-    "got": "^9.6.0",
+    "got": "^11.8.5",
     "metascraper": "^5.7.4",
     "metascraper-author": "^5.7.4",
     "metascraper-clearbit": "^5.7.4",
